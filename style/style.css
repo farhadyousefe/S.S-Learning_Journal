@@ -1,5 +1,43 @@
-html, 
+:root {
+  --color-background-body: #ffffff;
+  --color-background-footer: #202020;
+
+  --color-text-heading: #141414;
+  --color-text-body: #151515;
+  --color-text-strong: #000000;
+
+  --color-text-footer: #ececec;
+  --color-text-footer-secondary: #d7d7d7;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* =============================== Typography ======================================== */
+html {
+  /* 62.5 16px = 10px */
+  font-size: 62.5%;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+  background-color: var(--color-background-body);
+  color: var(--color-text-body);
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+h2,
+h3 {
+  color: var(--color-text-heading);
+}
+
+h1 {
+  color: var(--color-text-strong);
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
 }
