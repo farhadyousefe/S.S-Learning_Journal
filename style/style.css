@@ -24,6 +24,7 @@ html {
 body {
   background-color: var(--color-background-body);
   color: var(--color-text-body);
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.1;
 }
@@ -40,4 +41,43 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
+}
+
+/* ============================================ Header ============================================== */
+
+.page_header {
+  min-width: 400px;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.logo {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.2em;
+}
+.logo-img {
+  width: 23.16px;
+}
+.logo-header {
+  font-size: 13px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  /* gap: 1em; */
+}
+
+nav ul li {
+  list-style-type: none;
+  color: var(--color-text-heading);
+  padding: 0 0.7em;
+}
+
+nav ul li:hover,
+nav ul li:active {
+  cursor: pointer;
+  color: var(--color-text-heading);
 }
