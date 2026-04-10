@@ -130,15 +130,16 @@ nav ul li:active {
 .projects_section {
   display: grid;
 }
-.projects_section .row-one {
+.projects_section .row {
   display: grid;
   margin: auto;
+  gap: 1.25em;
 }
 
 .post_container {
   width: 380px;
   height: 370px;
-  margin: 1.25em;
+  margin-top: 1.25em;
 }
 .post_container .post_img {
   margin-bottom: 0.9em;
@@ -153,6 +154,10 @@ nav ul li:active {
 @media screen and (min-width: 768px) {
   body {
     max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .page_header {
     margin: 0 auto;
   }
   h2,
@@ -179,5 +184,21 @@ nav ul li:active {
     height: auto;
     min-height: 488px;
     width: 100%;
+  }
+  .post_container {
+    max-width: 309px;
+    height: 393px;
+  }
+  .post_container .post_img {
+    max-width: 309px;
+    max-height: 232px;
+    margin-bottom: 0.9em;
+  }
+
+  .projects_section .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 1.25em;
   }
 }
