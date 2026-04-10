@@ -46,12 +46,15 @@ h2 {
   margin: 0.56em 0;
 }
 
+time {
+  text-transform: uppercase;
+}
+
 /* ============================================ Header ============================================== */
 
 .page_header {
   min-width: 400px;
   min-height: 60px;
-
   display: flex;
   justify-content: space-between;
   padding: 0 1em;
