@@ -149,6 +149,17 @@ nav ul li:active {
   margin: 0;
 }
 
+.view_more {
+  border: none;
+  background-color: var(--color-background-body);
+  padding: 1.68em 1.25em;
+  font-weight: bold;
+}
+
+.display {
+  display: none;
+}
+
 /* ========================== Desktop ========================================= */
 
 @media screen and (min-width: 768px) {
@@ -200,5 +211,9 @@ nav ul li:active {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     gap: 1.25em;
+  }
+
+  .view_more {
+    display: none;
   }
 }
