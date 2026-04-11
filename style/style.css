@@ -120,6 +120,11 @@ nav ul li {
   margin: 0;
 }
 
+.hero b {
+  color: var(--color-background-body);
+  text-decoration: none;
+}
+
 /* ========================== Projects ======================================== */
 
 .projects_section {
@@ -156,6 +161,7 @@ nav ul li {
   background-color: var(--color-background-body);
   padding: 1.68em 1.25em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .display {
@@ -173,6 +179,14 @@ nav ul li {
   text-align: center;
 }
 
+h1 button {
+  all: unset;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: inline;
+}
+
 .journey_section img {
   width: 100%;
 }
@@ -188,6 +202,7 @@ nav ul li {
 .journey_section .recent_post_btn {
   padding-bottom: 0;
 }
+
 /* ========================== Desktop ========================================= */
 
 @media screen and (min-width: 600px) {
