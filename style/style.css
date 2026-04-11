@@ -63,6 +63,8 @@ time {
   align-items: center;
   min-height: 60px;
   padding: 0 1em;
+  max-width: 850px;
+  margin: auto;
 }
 .logo {
   display: flex;
@@ -148,7 +150,8 @@ nav ul li {
   height: auto;
 }
 
-.view_more {
+.view_more_btn,
+.recent_post_btn {
   border: none;
   background-color: var(--color-background-body);
   padding: 1.68em 1.25em;
@@ -163,6 +166,28 @@ nav ul li {
   display: none;
 }
 
+/* ============================== Journey Section ====================================== */
+
+.journey_section {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.journey_section img {
+  width: 100%;
+}
+.journey_section .article {
+  max-width: 840px;
+  margin: auto;
+  text-align: left;
+}
+.journey_section p {
+  max-width: fit-content;
+}
+
+.journey_section .recent_post_btn {
+  padding-bottom: 0;
+}
 /* ========================== Desktop ========================================= */
 
 @media screen and (min-width: 600px) {
@@ -181,6 +206,12 @@ nav ul li {
     max-width: 1124px;
     margin: auto;
   }
+  .journey_section {
+    max-width: 1124px;
+    padding: 0 1em;
+    margin: auto;
+  }
+
   .post_container {
     max-width: 309px;
     height: auto;
